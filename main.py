@@ -100,7 +100,7 @@ print(sum(jobSizes) / len(jobSizes))
 
 runCompletions = np.array(runCompletions)
 print(runCompletions)
-np.save("testFile.npy", runCompletions)
+np.save("testFile2.npy", runCompletions)
 
 # save the last one
 
