@@ -42,7 +42,8 @@ def handleDep():
     global clock, departures, serverEmpty, servingJob, nextDepTime, completionTimes
     departures += 1
     servingJob.departureTime = clock + servingJob.size
-    completionTimes.append(servingJob.departureTime - servingJob.arrivalTime)
+    if check == True:
+        runCompletions.append(servingJob.departureTime - servingJob.arrivalTime)
 
     if len(jobQueue) != 0:
         # double check
@@ -67,6 +68,7 @@ for i in range(runs):
     jobQueue = []
     completionTimes = []
     jobSizes = []
+    check = False
 
     serverEmpty = True
 
@@ -79,11 +81,11 @@ for i in range(runs):
             handleArr()
         else:
             clock = nextDepTime
+            if departures == maxDepartures:
+                check = True
             handleDep()
-    runCompletions.append(completionTimes.pop())
-    # runCompletions.append(completionTimes.pop())
     seed += 1
-print(len(runCompletions))
+
 
 
 
