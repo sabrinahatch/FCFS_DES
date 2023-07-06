@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/discreteEventSim_FCFS.iml" filepath="$PROJECT_DIR$/.idea/discreteEventSim_FCFS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DES_FCFS.iml" filepath="$PROJECT_DIR$/.idea/DES_FCFS.iml" />
     </modules>
   </component>
 </project>
