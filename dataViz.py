@@ -28,4 +28,8 @@ plt.plot(x, y)
 plt.xlabel('Load')
 plt.ylabel('Average Completion Time')
 plt.title('FCFS Load vs. Average Completion Time')
+
+plt.ylim(0, 10)  # Set the y-axis limits from 0 to 20
+plt.yticks(np.arange(0, 12, 2))  # Set the y-axis tick locations and labels from 0 to 20 with an increment of 2
+
 plt.show()
